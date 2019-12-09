@@ -31,5 +31,12 @@ export const menu = [
         name: 'Sparkling Water',
         type: 'Barista',
         price: 1.99
-    }
+    },
+    {
+        name: 'Naan*Curried Eggs',
+        type: 'Entree',
+        price: 3.99,
+        description: 'Two eggs as you like. Touch of cumin, ginger and turmeric. Add sriracha for extra warmth. *Naan not included.',
+        ingredients: 'Organic pasture-raised chicken eggs, butter, cumin, ginger, turmeric, salt, pepper'
+    },
 ]

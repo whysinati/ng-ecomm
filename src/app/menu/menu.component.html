@@ -7,13 +7,15 @@
             [routerLink]="['/menu', itemId]">
             {{ item.name }}
         </a>
+        <!-- future functionality to order from menu listing -->
+        <!-- <button (click)="addToOrder(item)">Add item</button> -->
     </h3>
     <!-- 'if' eliminates <p> tag for item without description -->
     <p *ngIf="item.description">
         {{ item.description }}
     </p>
     <div *ngIf="item.price > 0">
-        <button (click)="share()">
+        <button [title]="'Share'" (click)="share()">
             Dish on this...
         </button>
         <app-menu-specials
