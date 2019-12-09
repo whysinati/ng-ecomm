@@ -1,3 +1,21 @@
-<p>
-  menu works!
-</p>
+<h2>Hungry? Thirsty?</h2>
+
+<div *ngFor="let item of menu">
+
+    <h3>
+        <a [title]="item.name + ' details'">
+            {{ item.name }}
+        </a>
+    </h3>
+    <!-- 'if' eliminates <p> tag for item without description -->
+    <p *ngIf="item.description">
+        {{ item.description }}
+    </p>
+    <div *ngIf="item.price > 0">
+        <button (click)="share()">
+            Dish on this...
+        </button>
+    </div>
+
+</div>
+<!-- separate menu into different courses -->

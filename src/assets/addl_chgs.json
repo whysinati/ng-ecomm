@@ -1,0 +1,14 @@
+[
+    {
+      "type": "Delivery",
+      "price": 5.99
+    },
+    {
+      "type": "Corkage",
+      "price": 2.99
+    },
+    {
+      "type": "Custom",
+      "price": 1.99
+    }
+  ]
