@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+import { menu } from '../menu';
 
 @Component({
   selector: 'app-item-details',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item-details.component.scss']
 })
 export class ItemDetailsComponent implements OnInit {
+  item;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+  ) { }
 
   ngOnInit() {
+    this.route.paramMap.subscribe(params => {
+      this.item = menu[+params.get('itemId')];
+    });
   }
 
 }

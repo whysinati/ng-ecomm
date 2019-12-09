@@ -1,9 +1,10 @@
 <h2>Hungry? Thirsty?</h2>
 
-<div *ngFor="let item of menu">
+<div *ngFor="let item of menu; index as itemId">
 
     <h3>
-        <a [title]="item.name + ' details'">
+        <a [title]="item.name + ' details'"
+            [routerLink]="['/menu', itemId]">
             {{ item.name }}
         </a>
     </h3>
