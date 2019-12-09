@@ -15,7 +15,12 @@
         <button (click)="share()">
             Dish on this...
         </button>
+        <app-menu-specials
+            [item]="item"
+            (notify)="onNotify()">
+        </app-menu-specials>
     </div>
+
 
 </div>
 <!-- separate menu into different courses -->

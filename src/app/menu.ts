@@ -3,7 +3,8 @@ export const menu = [
         name: 'Carne TexMex',
         type: 'Entree',
         price: 14.99,
-        description: 'Juicy seared skirt steak marinated in ancho chile, cumin, coriander, lime and cilantro'
+        description: 'Juicy seared skirt steak marinated in ancho chile, cumin, coriander, lime and cilantro',
+        special: 1
     },
     {
         name: 'Rosemary Lemon Roasted Brussels Sprouts',

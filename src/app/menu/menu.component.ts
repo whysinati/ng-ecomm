@@ -13,6 +13,10 @@ export class MenuComponent { // implements OnInit {
     window.alert('This menu item has been shared!');
   }
 
+  onNotify() {
+    window.alert('One of your favorites is on special!');
+  }
+
   // constructor() { }
 
   // ngOnInit() {

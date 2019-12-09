@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { MenuComponent } from './menu/menu.component';
+import { MenuSpecialsComponent } from './menu-specials/menu-specials.component';
+import { ItemDetailsComponent } from './item-details/item-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
-    MenuComponent
+    MenuComponent,
+    MenuSpecialsComponent,
+    ItemDetailsComponent
   ],
   imports: [
     BrowserModule,
