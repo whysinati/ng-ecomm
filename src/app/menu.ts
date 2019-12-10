@@ -8,7 +8,7 @@ export const menu = [
         ingredients: 'beef, ancho chile powder, cumin, coriander, avocado oil, lime, cilantro, salt'
     },
     {
-        name: 'Rosemary Lemon Roasted Brussels Sprouts',
+        name: 'Roasted Brussels Sprouts',
         type: 'Side',
         price: 6.99,
         description: 'A little char, a little caramelization... delightful!',

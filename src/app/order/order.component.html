@@ -3,4 +3,11 @@
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency }}</span>
+  <span>
+      <button (click)="delFromOrder(item)" class="button fancy-button"><i 
+        class="material-icons">remove_shopping_cart</i>Remove</button>
+  </span>
 </div>
+
+<button (click)="clearOrder()" class="button fancy-button"><i 
+  class="material-icons">remove_shopping_cart</i>Clear Order</button>

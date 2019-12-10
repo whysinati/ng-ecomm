@@ -8,7 +8,8 @@
             {{ item.name }}
         </a>
         <!-- future functionality to order from menu listing -->
-        <!-- <button (click)="addToOrder(item)">Add item</button> -->
+        <button (click)="addToOrder(item)" class="button fancy-button"><i 
+            class="material-icons">add_shopping_cart</i>Add item</button>
     </h3>
     <!-- 'if' eliminates <p> tag for item without description -->
     <p *ngIf="item.description">
