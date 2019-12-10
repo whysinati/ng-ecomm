@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -24,10 +25,16 @@ export class OrderService {
 
   clearOrder(){
     this.items = []; //empty the items array
-    // return this.items;// return this.getItems(); //return this.items //show empty order
+    return this.items;// return this.getItems(); //return this.items //show empty order
   };
 
-  constructor() { }
+  getExtrasCosts() {
+    return this.http.get('/assets/extras.json');
+  }
+
+  constructor(
+    private http: HttpClient
+  ) { }
   //initial test method of the order service
   // test(): string{
   //   return 'success!';
