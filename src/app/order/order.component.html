@@ -11,5 +11,24 @@
   </span>
 </div>
 
+<form [formGroup]="orderForm" (ngSubmit)="onSubmit(orderForm.value)">
+
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="name" formControlName="name">
+  </div>
+
+  <div>
+    <label for="address">
+      Address
+    </label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+
+  <button class="button" type="submit">PLACE ORDER</button>
+</form>
+
 <button (click)="clearOrder()" class="button fancy-button"><i 
   class="material-icons">remove_shopping_cart</i>Clear Order</button>
