@@ -2,28 +2,29 @@
 
 <div *ngFor="let item of menu; index as itemId">
 
-    <h3>
+    <h3 style="margin-bottom: 0;">
         <a [title]="item.name + ' details'"
             [routerLink]="['/menu', itemId]">
             {{ item.name }}
         </a>
-        <!-- future functionality to order from menu listing -->
-        <button (click)="addToOrder(item)" class="button fancy-button"><i 
+        <div style="display: inline-block;" *ngIf="item.price > 0">
+                <button style="display: inline-block;" [title]="'Share'" (click)="share()">
+                    Dish on this...
+                </button>
+                <app-menu-specials style="display: inline-block; padding-left: 4px;"
+                    [item]="item"
+                    (notify)="onNotify()">
+                </app-menu-specials>
+        </div>
+        
+        <button style="display: inline-block;" (click)="addToOrder(item)" class="button fancy-button"><i 
             class="material-icons">add_shopping_cart</i>Add item</button>
     </h3>
     <!-- 'if' eliminates <p> tag for item without description -->
-    <p *ngIf="item.description">
+    <p style="margin-top: 2px;" *ngIf="item.description">
         {{ item.description }}
     </p>
-    <div *ngIf="item.price > 0">
-        <button [title]="'Share'" (click)="share()">
-            Dish on this...
-        </button>
-        <app-menu-specials
-            [item]="item"
-            (notify)="onNotify()">
-        </app-menu-specials>
-    </div>
+
 
 
 </div>

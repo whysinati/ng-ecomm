@@ -17,7 +17,8 @@ export class OrderComponent {//implements OnInit {
   }
 
   clearOrder() {window.alert('Order cleared!');
-    this.orderService.clearOrder(); //empty the items array
+    this.items = this.orderService.clearOrder(); //empty the items array 
+    //the above must have 'this.items =' re-assignment to properly display empty cart after
     // return this.items; //show empty order
     // this.orderService.getItems();
   };
