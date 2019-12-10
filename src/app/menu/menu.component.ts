@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router'; //future functionality
+import { ActivatedRoute } from '@angular/router';
 
 import { menu } from '../menu';
-import { OrderService } from '../services/order.service'; //future functionality
+import { OrderService } from '../services/order.service';
 
 @Component({
   selector: 'app-menu',
@@ -20,7 +20,6 @@ export class MenuComponent { // implements OnInit {
     window.alert('One of your favorites is on special!');
   }
 
-  //future functionality
   item;
 
   addToOrder(item) {window.alert('Item added to order!');

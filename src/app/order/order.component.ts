@@ -40,7 +40,7 @@ export class OrderComponent {//implements OnInit {
   // }
 
   onSubmit(customerData) {
-    //Process order submission data here
+    //future functionality: Process order submission data here
     //e.g. submit the data to an external server
     console.warn('Your order has been submitted!', customerData);
 

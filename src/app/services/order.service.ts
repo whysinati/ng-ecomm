@@ -25,7 +25,7 @@ export class OrderService {
 
   clearOrder(){
     this.items = []; //empty the items array
-    return this.items;// return this.getItems(); //return this.items //show empty order
+    return this.items;// return this.getItems(); //show empty order
   };
 
   getExtrasCosts() {

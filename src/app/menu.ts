@@ -39,4 +39,11 @@ export const menu = [
         description: 'Two eggs as you like. Touch of cumin, ginger and turmeric. Add sriracha for extra warmth. *Naan not included.',
         ingredients: 'Organic pasture-raised chicken eggs, butter, cumin, ginger, turmeric, salt, pepper'
     },
+    {
+        name: 'Mommy\'s Chili Beans',
+        type: 'Entree',
+        price: 7.99,
+        description: 'TexMex-Indian fusion of Romano beans. My favorite!',
+        ingredients: 'Romano beans, tomatoes, cumin, ginger, cilantro, lime, turmeric, salt'
+    }
 ]
