@@ -16,6 +16,10 @@ export class ItemDetailsComponent implements OnInit {
     this.orderService.addToOrder(item);
   }
 
+  delFromOrder(item) {window.alert('Item removed from order!');
+    this.orderService.delFromOrder(item);
+  }
+
   constructor(
     private route: ActivatedRoute,
     private orderService: OrderService,

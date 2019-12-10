@@ -11,8 +11,12 @@ export class OrderService {
     this.items.push(item); //add item to the order
   }
 
+  delFromOrder(item){
+    const index = this.items.indexOf(item);
+    this.items.splice(index, 1); //remove item from order
+  }
+
   //add functionality to adjust item quantities
-  //add functionality to delete items
 
   getItems(){
     return this.items; //show items on the order

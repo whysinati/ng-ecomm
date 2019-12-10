@@ -1,9 +1,14 @@
 <div *ngIf="item">
-<h2>{{ item.name }}</h2>
+<h3>{{ item.name }}
+    <button (click)="addToOrder(item)" class="button fancy-button"><i 
+      class="material-icons">add_shopping_cart</i>Add item</button>
+    <button (click)="delFromOrder(item)" class="button fancy-button"><i 
+      class="material-icons">remove_shopping_cart</i>Remove item</button>
+</h3>
 <h4>{{ item.price | currency }}</h4>
 <p>
   {{ item.description }}
 </p>
-<button (click)="addToOrder(item)">Add item</button>
+
 <p><b>INGREDIENTS: </b>{{ item.ingredients }}</p>
 </div>

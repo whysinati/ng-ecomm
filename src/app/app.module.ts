@@ -8,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { MenuComponent } from './menu/menu.component';
 import { MenuSpecialsComponent } from './menu-specials/menu-specials.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ItemDetailsComponent } from './item-details/item-details.component';
     TopBarComponent,
     MenuComponent,
     MenuSpecialsComponent,
-    ItemDetailsComponent
+    ItemDetailsComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
