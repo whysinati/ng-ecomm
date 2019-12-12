@@ -1,15 +1,16 @@
 <h3>My Order</h3>
-<p>
-  <a routerLink="/extras">Extras Costs</a>
-</p>
+
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency }}</span>
   <span>
       <button (click)="delFromOrder(item)" class="button fancy-button"><i 
         class="material-icons">remove_shopping_cart</i>Remove</button>
-  </span>
+      </span>
 </div>
+<p>
+  <a routerLink="/extras">Extras - Pricing</a>
+</p>
 
 <form [formGroup]="orderForm" (ngSubmit)="onSubmit(orderForm.value)">
 
@@ -27,8 +28,9 @@
     <input id="address" type="text" formControlName="address">
   </div>
 
-  <button class="button" type="submit">PLACE ORDER</button>
-</form>
+  <button style="vertical-align: text-bottom; margin-right: 16px;" class="button" type="submit">PLACE ORDER</button>
 
-<button (click)="clearOrder()" class="button fancy-button"><i 
-  class="material-icons">remove_shopping_cart</i>Clear Order</button>
+  <button (click)="clearOrder()" class="button fancy-button"><i 
+   class="material-icons">remove_shopping_cart</i>Clear Order</button>
+
+</form>

@@ -1,9 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 /* Global Styles */
 
+@import url('https://fonts.googleapis.com/css?family=Lobster|Roboto&display=swap');
 * {
   font-family: 'Roboto', Arial, sans-serif;
-  color: #616161;
+  color:#260126; // #616161;
+  background: #F2EEB3;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,11 +27,13 @@ router-outlet + *  {
 /* Text */
 
 h1 {
+  font-family: 'Lobster', cursive;
   font-size: 32px;
 }
 
 h2 {
-  font-size: 20px;
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
 }
 
 h1, h2 {
@@ -44,7 +48,7 @@ p {
 
 a {
   cursor: pointer;
-  color: #000033;//#1976d2;
+  color: #260126;//#1976d2;
   text-decoration: none;
 }
 
@@ -60,6 +64,7 @@ input {
   padding: 8px;
   margin-bottom: 16px;
   border: 1px solid #BDBDBD;
+  background: white;
 }
 
 label {
@@ -78,8 +83,8 @@ label {
   border-radius: 2px;
   font-size: 14px;
   cursor: pointer;
-  background-color: #1976d2;
-  color: white;
+  background-color:#8c6954;// #1976d2;
+  color: #f2eeb3; //white;
   border: none;
 }
 
@@ -96,12 +101,12 @@ label {
 /* Fancy Button */
 
 .fancy-button {
-  background-color: white;
-  color: #000033;//#1976d2;
+  background-color: #F2EEB3;// white;
+  color: #260126;//#1976d2;
 }
 
 .fancy-button i.material-icons {
-  color: #000033;//#1976d2;
+  color: #260126;//#1976d2;
   padding-right: 4px;
 }
 
@@ -110,7 +115,7 @@ label {
 app-top-bar {
   width: 100%;
   height: 68px;
-  background: rgb(102,0,51);// #663366;;// #1976d2;
+  background: #59323C;// rgb(102,0,51);// #663366;;// #1976d2;
   padding: 16px;
   display: flex;
   flex-direction: row;
@@ -119,7 +124,8 @@ app-top-bar {
 }
 
 app-top-bar h1 {
-  color: rgb(218, 247, 166);// white;
+  color: #F2EEB3;//rgb(218, 247, 166);// white;
+  background: #59323c;
   margin: 0;
 }
 
@@ -135,12 +141,23 @@ app-top-bar h1 {
   padding: 16px 32px;
   margin-bottom: 8px;
   border-radius: 2px;
-  background-color: #EEEEEE;
+  background-color: white;//#BFAF80;//#EEEEEE;
 }
 
+span {
+  background: white;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at http://angular.io/license
 */
+
+/*ADOBE COLOR*/ 
+/* Color Theme Swatches in Hex */
+.Vintage-Romantic-1-hex { color: #59323C; }
+.Vintage-Romantic-2-hex { color: #260126; }
+.Vintage-Romantic-3-hex { color: #F2EEB3; }
+.Vintage-Romantic-4-hex { color: #BFAF80; }
+.Vintage-Romantic-5-hex { color: #8C6954; }

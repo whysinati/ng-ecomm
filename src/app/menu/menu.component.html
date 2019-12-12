@@ -1,4 +1,4 @@
-<h2>Hungry? Thirsty? Try one of these...</h2>
+<h2>Hungry? Thirsty?</h2>
 
 <div *ngFor="let item of menu; index as itemId">
 
@@ -8,8 +8,8 @@
             {{ item.name }}
         </a>
         <div style="display: inline-block;" *ngIf="item.price > 0">
-                <button style="display: inline-block;" [title]="'Share'" (click)="share()">
-                    Dish on this...
+                <button style="display: inline-block;" [title]="'Dish on this...'" (click)="share()">
+                    Share
                 </button>
                 <app-menu-specials style="display: inline-block; padding-left: 4px;"
                     [item]="item"

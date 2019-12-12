@@ -10,5 +10,5 @@
   {{ item.description }}
 </p>
 
-<p><b>INGREDIENTS: </b>{{ item.ingredients }}</p>
+<p *ngIf="item.ingredients"><b>INGREDIENTS: </b>{{ item.ingredients }}</p>
 </div>
