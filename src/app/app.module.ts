@@ -11,6 +11,9 @@ import { MenuSpecialsComponent } from './menu-specials/menu-specials.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
 import { OrderComponent } from './order/order.component';
 import { ExtrasComponent } from './extras/extras.component';
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ExtrasComponent } from './extras/extras.component';
     MenuSpecialsComponent,
     ItemDetailsComponent,
     OrderComponent,
-    ExtrasComponent
+    ExtrasComponent,
+    LoginComponent,
+    LogoutComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
