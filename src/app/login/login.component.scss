@@ -1,0 +1,28 @@
+// p {
+//     font-size: 1.3rem;
+// }
+
+form {
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+label {
+    font-size: 1rem;
+}
+
+input[type=submit] {
+    display: block;
+    background: #8c6954;
+    color: #f2eeb3;
+  }
+
+input[type=submit]:hover {
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+.alert-error {
+    color: darkred;
+    font-size: 1.3rem;
+    background:lightpink;
+}
